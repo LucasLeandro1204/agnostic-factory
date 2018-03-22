@@ -1,0 +1,42 @@
+{
+  "name": "agnostic-factory",
+  "version": "0.1.0",
+  "description": "Agnostic Factory to make your life easier when testing Edit",
+  "main": "dist/Factory",
+  "scripts": {
+    "build": "rm -r /dist -f && babel src --out-dir dist --copy-files",
+    "test": "nyc --reporter=html mocha test --exit --recursive --timeout 10000 --require babel-core/register --require babel-polyfill"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LucasLeandro1204/knex-model-factory.git"
+  },
+  "keywords": [
+    "knex",
+    "orm",
+    "knexjs",
+    "objection",
+    "objectionjs",
+    "objection-orm"
+  ],
+  "author": "Lucas Leandro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LucasLeandro1204/knex-model-factory/issues"
+  },
+  "homepage": "https://github.com/LucasLeandro1204/knex-model-factory#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.1",
+    "chai": "^4.1.2",
+    "mocha": "^5.0.4",
+    "nyc": "^11.6.0",
+    "sqlite3": "^4.0.0"
+  },
+  "files": [
+    "dist/*"
+  ]
+}
